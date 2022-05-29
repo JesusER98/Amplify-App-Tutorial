@@ -5,6 +5,7 @@ import { AmplifyAuthenticatorModule } from '@aws-amplify/ui-angular';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { PrimengImportsModule } from './primeng/primeng-imports/primeng-imports.module';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     /* configure App with AmplifyAuthenticatorModule */
     AmplifyAuthenticatorModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    PrimengImportsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
