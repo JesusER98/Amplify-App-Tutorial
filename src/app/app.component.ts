@@ -25,7 +25,7 @@ export class AppComponent implements OnInit {
   }
 
   async ngOnInit() {
-    /* fetch restaurants when app loads */
+    /* fetch restaurants when app loads 
     this.api.ListRestaurants().then((event) => {
       this.restaurants = event.items as Restaurant[];
     });
@@ -34,7 +34,7 @@ export class AppComponent implements OnInit {
         const newRestaurant = event.value.data.onCreateRestaurant;
         this.restaurants = [newRestaurant, ...this.restaurants];
       })
-    );
+    );*/
   }
 
   ngOnDestroy() {

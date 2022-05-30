@@ -1,9 +1,4 @@
-<span class="p-float-label">
-  <input id="float-input" type="text" pInputText>
-  <label for="float-input">Username</label>
-</span>
-
-
+<!-- LOGIN -->
 <amplify-authenticator>
   <ng-template amplifySlot="authenticated" let-user="user" let-signOut="signOut">
     <h1>Welcome {{ user.username }}!</h1>
@@ -11,10 +6,14 @@
   </ng-template>
 </amplify-authenticator>
 
+<!-- PROFILE -->
+
+<!-- EDIT PROFILE INFO -->
+
 <div class="form-body">
   <form autocomplete="off" [formGroup]="createForm" (ngSubmit)="onCreate(createForm.value)">
     <div>
-      <label>Name: </label>
+      <label>Restaurant: </label>
       <input type="text" formControlName="name" autocomplete="off" />
     </div>
     <div>
@@ -28,6 +27,8 @@
     <button type="submit">Submit</button>
   </form>
 </div>
+
+<!-- INFORESULTS -->
 
 <div *ngFor="let restaurant of restaurants">
   <div>{{ restaurant.city }}</div>
